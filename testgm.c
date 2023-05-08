@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int print_title_screen()
+{
+	printf("##################################\n");
+	printf("##                              ##\n");
+	printf("##           Dino Run           ##\n");
+	printf("##           - V0.1 -           ##\n");
+	printf("##                              ##\n");
+	printf("##  1. Game Start               ##\n");
+	printf("##  2. How To Play              ##\n");
+	printf("##  3. Exit                     ##\n");
+	printf("##                              ##\n");
+	printf("##################################\n");
+	return 0;
+}
+
+
+int main()
+{
+	print_title_screen();
+	int game_state = 1;
+	int input = 0;
+	while(game_state)
+	{
+		printf("input(1~3)>");
+		scanf("%d",&input);
+		if(input==3)
+		{
+			game_state=0;
+		}
+		if(input==2)
+		{ 
+         	  printf("####################################\n");
+	          printf("##                                ##\n");
+	          printf("##         Dino Run               ##\n");
+	          printf("##           -VO.1-               ##\n");
+	          printf("## 1. Jumping: Press the space    ##\n");
+	          printf("##  bar to make the dinosaur      ##\n");
+	          printf("## character jump. This can       ##\n");
+	          printf("##  be used to avoid obstacles    ##\n");
+	          printf("## or to jump over high obstacles.##\n");
+	          printf("##  2. Avoiding obstacles: When   ##\n");
+	          printf("## obstacles apper, avoid them  so##\n");
+	          printf("## that the dinosaur character    ##\n");
+	          printf("##  doesn't collide with them.    ##\n");
+                  printf("## You can jump or move to avoid  ##\n");
+                  printf("##                                ##\n");
+	          printf("####################################\n");
+	                    
+		  printf("Return to menu? (1.yes 2 no)");
+	          scanf("%d",&input);
+		  }
+		  
+	}
+
+	return 0;
+}
