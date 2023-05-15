@@ -1,0 +1,2 @@
+int howtoplay();
+int title();
